@@ -1,6 +1,10 @@
-<app-pokemon-card
-  *ngFor="let pokemon of pokemonService.pokemons"
-  [pokemon]="pokemon"
-  class="col-lg-3 col-md-4 col-sm-6"
->
-</app-pokemon-card>
+<div class="container mt-5">
+  <div class="row">
+    <app-pokemon-card
+      *ngFor="let pokemon of pokemonService.pokemons"
+      [pokemon]="pokemon"
+      class="col-lg-3 col-md-4 col-sm-6"
+    >
+    </app-pokemon-card>
+  </div>
+</div>

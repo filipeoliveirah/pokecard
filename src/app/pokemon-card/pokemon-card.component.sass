@@ -17,7 +17,9 @@
         filter: brightness(1.2)
 
   &__number,
-  &__name
+  &__name,
+  &__attacks,
+  &__weaknesses
     padding: 0 10px
 
   &__number
@@ -25,11 +27,21 @@
     font-size: 80%
     padding-top: 2px
 
-  &__name
+  &__name,
+  &__attacks,
+  &__resistances,
+  &__weaknesses
     color: white
     font-size: 1.25rem
     margin: 0.5em 0 5px
     text-transform: capitalize
+
+  &__attack, 
+  &__resistance,
+  &__weaknesse
+    font-size: 11px
+    list-style: none
+    padding-left: 0
 
   &__types
     display: flex
