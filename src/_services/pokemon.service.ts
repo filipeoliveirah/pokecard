@@ -14,6 +14,5 @@ export class PokemonService {
 
     this.httpClient.get<any>(endpointPokeCards)
       .subscribe(result => this.pokemons = result.data);
-      console.log(this.pokemons);
   }
 }
