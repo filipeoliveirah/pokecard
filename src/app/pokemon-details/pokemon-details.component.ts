@@ -17,7 +17,6 @@ export class PokemonDetailsComponent implements OnInit {
       this.pokemonService.getPokeCardById(params.get('id'))
         .subscribe(result => {          
           this.pokemon = result.data;
-          console.warn(this.pokemon);
         })   
     });
   }
