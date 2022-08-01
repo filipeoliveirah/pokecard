@@ -1,5 +1,5 @@
 <section id="pokemon-list">
-  <div class="container mt-5" *ngIf="pokemonsData; else notFind">
+  <div class="container mt-5" *ngIf="pokemonsData;">
     <div class="row">
       <app-pokemon-card
         *ngFor="let pokemon of pokemonsData"
@@ -8,8 +8,5 @@
       >
       </app-pokemon-card>
     </div>
-  </div>
-  <div #notFind>
-    <p class="text-center">Nenhum Pokemon encontrado</p>
   </div>
 </section>
