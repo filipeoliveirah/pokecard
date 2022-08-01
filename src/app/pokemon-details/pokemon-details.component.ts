@@ -14,11 +14,10 @@ export class PokemonDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
-      console.warn(params.get('id'));
       this.pokemonService.getPokeCardById(params.get('id'))
         .subscribe(result => {          
           this.pokemon = result.data;
-          console.warn('this.pokemon', this.pokemon);
+          console.warn(this.pokemon);
         })   
     });
   }

@@ -1,0 +1,17 @@
+@import "~src/assets/scss/_variables"
+@import "~src/assets/scss/_mixins"
+#header
+    img
+        max-width: 150px
+        margin: 20px
+    .navbar-brand
+        width: fit-content
+    .row
+        @include breakpoint(tablets)
+            justify-content: center
+        
+    .form-inline
+        display: flex    
+    input,
+    button
+        margin: 5px
